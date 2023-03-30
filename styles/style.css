@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../background/340618.png);
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+main {
+    display: block;
+    height: 90vh;
+    margin: 5vh 20vw;
+    padding-top: 0px;
+    
+    border-radius: 5px;
+
+    background-color: rgba(0, 0, 0, 0.37);
+    color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 1em;
+    
+}
+
+h2 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    padding-left: 13%;
+    padding-right: 11%;
+    margin-top: 50px;
+    gap: 50px 18px;
+}
+
+
+.card {
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+img {
+    width: 14vw;
+    height: 20vh;
+
+    border-radius: 8px;
+
+    transition: transform .4s;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+input {
+    margin-top: 10px;
+    
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Animations*/
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main {
+    animation: fromTop .7s .4s backwards;
+    animation-delay: .6s;
+}
